@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+    /*4: Maior Número [2]
+Peça para o usuário informar três números e diga qual dos três é o maior número*/
+
+    //Entrada
+
+    const one = Number(prompt("Escreva um número.").trim());
+    const two = Number(prompt("Escreva outro número.").trim());
+    const three = Number(prompt("Escreva um terceiro número").trim());
+
+    //Processamento
+
+    if(one > two && one > three)
+    {
+        alert(`O número ${one} é o maior número.`);
+    }
+    else if(two > one && two > three)
+    {
+        alert(`O número ${two} é o maior número`);
+    }
+    else if(three > one && three > two)
+    {
+        alert(`O número ${three} é o maior número`);
+    }
+
+</script>

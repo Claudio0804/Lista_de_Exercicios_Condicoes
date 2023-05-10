@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+    /*6: Situação do aluno
+Peça para o aluno informar as notas que obteve nos três trimestres. Calcule a média e apresente a seguinte mensagem:
+- Se nota for menor que 4: Reprovado
+- Se nota for menor que 6: Exame
+- Se nota for acima de 6: Aprovado*/
+
+    //Entrada
+
+    const note1 = Number(prompt("Qual a sua primeira nota?").trim().replace(",","."));
+    const note2 = Number(prompt("Qual a sua segunda nota?").trim().replace(",","."));
+    const note3 = Number(prompt("Qual a sua terceira nota?").trim().replace(",","."));
+
+    //Processamento
+
+    const media = (note1 + note2 + note3) / 3;
+
+    if(media < 4)
+    {
+        alert(`Você foi reprovado!`)
+    }
+    else if(media >= 6 && media >= 4)
+    {
+        alert(`Você terá que fazer o exame!`)
+    }
+    else if(media >=6)
+    {
+        alert(`Você está aprovado.`)
+    }
+</script>
