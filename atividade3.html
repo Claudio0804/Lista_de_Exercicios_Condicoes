@@ -6,20 +6,24 @@ Peça para o usuário informar dois números e diga qual dos dois é o maior nú
 
     //Entrada
 
-    const numero1 = Number(prompt(`Insira um número.`).trim());
-    const numero2 = Number(prompt(`Insira um número.`).trim());
+    const numero1 = (prompt(`Insira um número.`).trim());
+    const numero2 = (prompt(`Insira um número.`).trim());
 
     //Processamento
 
-    if(numero1 > numero2){
-        alert(`O número ${numero1} é maior que o número ${numero2}.`);
+    if ((isNaN(numero1)) == true || isNaN(numero2) == true) {
+        alert("Um dos dois não é um número")
     }
-    else if(numero1 < numero2)
-    {
-        alert(`O número ${numero2} é maior que o número ${numero1}`);
-    }
-    else if(numero1 == numero2);
-    {
-        alert(`O dois números são iguais!`);
+    else {
+        if (numero1 > numero2) {
+            alert(`O número ${numero1} é maior que o número ${numero2}.`);
+        }
+        else if (numero1 < numero2) {
+            alert(`O número ${numero2} é maior que o número ${numero1}`);
+        }
+
+        else {
+            alert(`Os dois números são iguais!`);
+        }
     }
 </script>
